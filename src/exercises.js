@@ -7,7 +7,9 @@ function commonEnd(a, b) {
 }
 
 function endsMeet(values, n) {
-  // write your code here
+if(!values || values.length < n || n < 0){
+
+}
 }
 
 function difference(numbers) {
