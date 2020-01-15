@@ -1,7 +1,7 @@
 function commonEnd(a, b) {
   if (!a || a.length === 0 || !b || b.length === 0) {
     return false;
-  } 
+  }
 
   // write your code here
 }
@@ -21,7 +21,7 @@ function max(number) {
 }
 
 function middle(values) {
-  // write your code here
+   // write your code here
 }
 
 function increasing(numbers) {
@@ -33,7 +33,7 @@ function everywhere(values, x) {
 }
 
 function consecutive(numbers) {
-  // write your code here
+  // write your code her
 }
 
 function balance(numbers) {
