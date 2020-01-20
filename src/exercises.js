@@ -76,10 +76,37 @@ function middle(values) {
 
 function increasing(numbers) {
   // write your code here
+  if (!numbers || numbers.some(isNaN) || Number.isInteger(numbers) || numbers.length < 3) {
+     return undefined;
+   }
+   else {
+     for (let i = 1; i < numbers.length; i++) {
+       if ((numbers[i - 1] + 1) === numbers[i] && numbers[i + 1] - 1 === numbers[i]) {
+             return true;
+             break;
+       }
+     }
+   }
+   return false;
 }
 
 function everywhere(values, x) {
-  // write your code here
+ // write your code here
+  let result;
+  	if (!values || values.length < 1 || !x) {
+  		return false;
+  	}
+
+  	for (let i = 0; i < values.length; i++) {
+  		if (values[i] !== x) {
+  			if (values[i - 1] === x || values[i + 1] === x) {
+  				result = false;
+  			} else {
+  				return false;
+  			}
+  		}
+  	}
+  	return true;
 }
 
 function consecutive(numbers) {
