@@ -127,6 +127,27 @@ function consecutive(numbers) {
 
 function balance(numbers) {
   // write your code here
+  	let left = 0;
+  	let result;
+  	let right = 0;
+
+  	if (!numbers || numbers.some(isNaN) || Number.isInteger(numbers) || numbers.length < 2) {
+  		return false;
+  	}
+  	for (let i = 0; i < numbers.length; i++) {
+  		left = left + numbers[i];
+  	}
+  	let half = left / 2;
+  	if (left % 2 === 1) {
+  		return false;
+  	}
+  	for (let j = 0; j < numbers.length - 1; j++) {
+  		right = right + numbers[j];
+  		if (right === half) {
+  			return true;
+  		}
+  	}
+  	return false;
   console.log("test");
 }
 
