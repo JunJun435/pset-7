@@ -43,6 +43,13 @@ function difference(numbers) {
 
 function max(number) {
   // write your code here
+  if (numbers == undefined||numbers < 1||numbers.some(isNaN)) {
+    return undefined;
+  } else {
+    let largest = Math.max.apply(Math, numbers);
+    let smallest = Math.min.apply(Math, numbers);
+    return largest - smallest;
+  }
 }
 
 function middle(values) {
