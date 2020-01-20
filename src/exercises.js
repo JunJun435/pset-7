@@ -67,8 +67,8 @@ function middle(values) {
   if (values == undefined||values.length < 3||values.length % 2 == 0) {
     return [];
   } else {
-    let middle1 = values [Math.floor((values.length - 1) / 2) - 1];
-    let middle2 = values[(values.length - 1) / 2];
+    let mid1 = values [Math.floor((values.length - 1) / 2) - 1];
+    let mid2 = values[(values.length - 1) / 2];
 
     return [middle1, middle2];
   }
