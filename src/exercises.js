@@ -70,7 +70,7 @@ function middle(values) {
     let mid1 = values [Math.floor((values.length - 1) / 2) - 1];
     let mid2 = values[(values.length - 1) / 2];
 
-    return [middle1, middle2];
+    return [mid1, mid2];
   }
 }
 
