@@ -62,6 +62,18 @@ function max(number) {
   }
 }
 
+function middle(values) {
+  // write your code here
+  if (values == undefined||values.length < 3||values.length % 2 == 0) {
+    return [];
+  } else {
+    let middle1 = values [Math.floor((values.length - 1) / 2) - 1];
+    let middle2 = values[(values.length - 1) / 2];
+
+    return [middle1, middle2];
+  }
+}
+
 function increasing(numbers) {
   // write your code here
 }
